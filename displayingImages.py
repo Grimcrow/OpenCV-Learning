@@ -43,9 +43,14 @@ You can create as many windows as you wish, but with different window names.
 
 """
 
-#cv2.imshow("default", img_default)
-#cv2.imshow("Gray Scale", img_gray)
+cv2.imshow("default", img_default)
+
+cv2.imshow("Gray Scale", img_gray)
+
+#Create a window that is re-sizeable
 cv2.namedWindow("unchanged", cv2.WINDOW_NORMAL)
+
 cv2.imshow("Unchanged", img_unchanged)
+
 cv2.waitKey(0)
 cv2.destroyAllWindows()

@@ -52,5 +52,17 @@ cv2.namedWindow("unchanged", cv2.WINDOW_NORMAL)
 
 cv2.imshow("Unchanged", img_unchanged)
 
+#Wait infinitly for a keyboard input
 cv2.waitKey(0)
+#destroy all windows or an alternative can be used cv2.destroyWindow(window_name)
 cv2.destroyAllWindows()
+
+"""
+Write an image
+
+Use the function cv2.imwrite() to save an image.
+
+First argument is the file name, second argument is the image you want to save.
+"""
+
+cv2.imwrite("pic_gray.jpg", img_gray)
